@@ -158,7 +158,7 @@ test("should access outlook", async ({ page }) => {
 ```
 
 ### Run Your E2E Tests
-If you are using pnpm you can use the following shell command to run your E2E tests, but `npx playwright test --project='chromium'` should work, too. The source code in the [Github repository](https://github.com/larsschieffer/outlook-playwright-e2e) contains an additional test, which accesses the also calendar view, such that 3 tests are run (authentication flow + 2 tests).
+If you are using pnpm you can use the following shell command to run your E2E tests. The source code in the [Github repository](https://github.com/larsschieffer/outlook-playwright-e2e) contains an additional test, which also accesses the calendar view, such that 3 tests are run (authentication flow + 2 tests).
 
 ```shell
 $ pnpm exec playwright test --project='chromium'
@@ -169,7 +169,6 @@ To open last HTML report run:
 
   pnpm exec playwright show-report
 ```
-
 
 ## Conclusion
 Congratulations! Now everything is ready to test your own Outlook Add-in. The only thing left is to install your Add-in in the test user account. Afterwards, your E2E tests will authenticate as a "real" user, access Outlook and perform interactions to verify your desired behaviour. 
